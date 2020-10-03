@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alfred Design</title>
+    <link rel="stylesheet" href="estilos.css" />
+  </head>
+  <body>
+    <nav>
+      <button class="nav-boton" onclick="accion()">Menu</button>
+      <a href="nosotros.html" class="nav-enlace desaparece">Nosotros</a>
+      <a href="blog.html" class="nav-enlace desaparece">Blog</a>
+      <a href="contacto.html" class="nav-enlace desaparece">Contacto</a>
+    </nav>
+    <header>
+      <div class="textos">
+        <h1 class="titulo">Alfred Design</h1>
+        <h3 class="subtitulo">Desarrollo web</h3>
+        <a href="#" class="boton">Suscribete</a>
+      </div>
+      <div class="sesgoabajo"></div>
+    </header>
+
+    <main>
+      <section class="acerca-de">
+        <div class="contenedor">
+          <h2 class="sobre-nosotros">Ingeniería del Software</h2>
+          <h3 class="slogan">Tirando codigo en la web</h3>
+          <p class="parrafo">
+            La Ingeniería del Software es una disciplina o área de la
+            Informática que ofrece métodos y técnicas para desarrollar y
+            mantener software de calidad que resuelven problemas de todo tipo.
+            Existen varias definiciones sobre esta ciencia de la computación que
+            permiten describir este proceso.
+          </p>
+          <p class="parrafo">
+            La Ingeniería del Software trata con áreas muy diversas de la
+            Informática y de las ciencias de la computación, tales como
+            construcción de compiladores, sistemas operativos o desarrollos de
+            Intranet/Internet, abordando todas las fases del ciclo de vida del
+            desarrollo de cualquier tipo de sistemas de información y aplicables
+            a una infinidad de áreas tales como: negocios, investigación
+            científica, medicina,producción,logística, banca, control de
+            tráfico, meteorología, el mundo del derecho, la red de redes
+            Internet, redes Intranet y Extranet, etc.
+          </p>
+        </div>
+      </section>
+
+      <section class="services">
+        <div class="container">
+          <h2 class="subtitle">Lo aprendido<span class="point">.</span></h2>
+          <p class="copy__section">
+            Ofrecemos las soluciones perfectas para revolución digital
+          </p>
+
+          <article class="container-cards">
+            <div class="card">
+              <img src="img/HTML5.jpg" class="card__img" />
+              <div class="cards__text">
+                <p class="card__list">HTML no es un lenguaje de programación</p>
+                <h3 class="card__title">HTML<span class="point">.</span></h3>
+                <p class="card__copy">
+                  HTML significa lenguaje de marcado de hipertexto, y le permite
+                </p>
+                <a href="#" class="card__button">Seguir leyendo</a>
+              </div>
+            </div>
+            <div class="card">
+              <img src="img/css.jpg" class="card__img" />
+              <div class="cards__text">
+                <p class="card__list">CSS (en inglés Cascading Style Sheets)</p>
+                <h3 class="card__title">CSS<span class="point">.</span></h3>
+                <p class="card__copy">
+                  Es lo que se denomina lenguaje de hojas de estilo en cascada
+                </p>
+                <a href="#" class="card__button">Seguir leyendo</a>
+              </div>
+            </div>
+            <div class="card">
+              <img src="img/javascript.png" class="card__img" />
+              <div class="cards__text">
+                <p class="card__list">lo que puedes lograr con javascript</p>
+                <h3 class="card__title">
+                  JavaScript <span class="point">.</span>
+                </h3>
+                <p class="card__copy">
+                  es un lenguaje de secuencias de comandos que te permite crear
+                </p>
+                <a href="#" class="card__button">Seguir leyendo</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+    <script>
+      function accion() {
+        var ancla = document.getElementsByClassName("nav-enlace");
+        for (var i = 0; i < ancla.length; i++) {
+          ancla[i].classList.toggle("desaparece");
+        }
+      }
+    </script>
+  </body>
+</html>
