@@ -448,7 +448,7 @@ input[type="submit"] {
     justify-content: space-evenly;
   }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 470px) {
   .mockup {
     width: 80%;
     margin-bottom: 15px;
